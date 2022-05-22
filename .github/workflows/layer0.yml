@@ -38,7 +38,7 @@ jobs:
     if: contains(github.ref, 'refs/tags') == false || github.event_name == 'release'
     runs-on: ubuntu-latest
     env:
-      deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
+      deploy_token: vEqvsbQPoH3Hxxs6PSQnJHL9
     steps:
       - name: Check for Layer0 deploy token secret
         if: env.deploy_token == ''
